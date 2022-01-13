@@ -5,3 +5,75 @@
   display: flex;
   justify-content: space-between;
 }
+
+/*
+ $(".play").click(function() {
+  let userChoice = $(".input").val();
+  $(".userChoice").text(userChoice);
+  if (userChoice === "rock"){
+    $(".userChoice").text("rock");
+ } else if (userChoice === "paper"){
+    $(".userChoice").text("paper");
+  } else if (userChoice === "scissors"){
+    $(".userChoice").text("scissors");
+ } else {
+   $(".userChoice").text("Please enter a valid input")
+    return userChoice;
+} 
+ 
+  
+  let randomNumber;
+  randomNumber = Math.random();
+  randomNumber = Math.random() * 3;
+  randomNumber = Math.ceil(randomNumber);
+  
+    let computerChoice;
+    if (randomNumber === 1){
+      $(".computerChoice").text("rock");
+  } else if (randomNumber === 2){
+     $(".computerChoice").text("paper");
+  } else {
+     $(".computerChoice").text("scissors");
+  } 
+  
+  //rock
+  if (randomNumber === 1 && userChoice === "paper")   {
+    $(".result").text("User wins!!")
+  } else if (randomNumber === 1 && userChoice === "scissors") {
+    $(".result").text("Computer wins!!")
+  } else if (randomNumber === 1 && userChoice === "rock") {
+    $(".result").text("It's a tie!!")
+  }
+  //paper
+   if (randomNumber === 2 && userChoice === "scissors") {
+    $(".result").text("User wins!!")
+  } else if (randomNumber === 2 && userChoice === "rock") {
+    $(".result").text("Computer wins!!")
+  } else if (randomNumber === 2 && userChoice === "paper") {
+    $(".result").text("It's a tie!!")
+  }
+  // scissors
+   if (randomNumber === 3 && userChoice === "rock") {
+    $(".result").text("User wins!!")
+  } else if (randomNumber === 3 && userChoice === "paper") {
+    $(".result").text("Computer wins!!")
+  } else if (randomNumber === 3 && userChoice === "scissors") {
+    $(".result").text("It's a tie!!")
+  }
+  
+ let computerChoice;
+    if (randomNumber === 1){
+      $(".computerChoice").text("rock");
+  } else if (randomNumber === 2){
+     $(".computerChoice").text("paper");
+  } else {
+     $(".computerChoice").text("scissors");
+  } 
+  
+  }); *\
+
+
+
+ 
+
+
